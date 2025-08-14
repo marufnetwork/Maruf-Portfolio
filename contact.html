@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — Maruf Hossain</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .form{ display:grid; gap:10px; }
+    input, textarea{ background:rgba(255,255,255,.04); border:1px solid var(--border); border-radius:12px; padding:12px; color:var(--text); }
+    textarea{ min-height:120px; resize:vertical; }
+    .note{ color:#c7ceff; font-size:.95rem; }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container inner">
+      <div class="brand"><span class="dot"></span> <span>Maruf Hossain</span></div>
+      <nav class="links">
+        <a class="link" href="index.html">Home</a>
+        <a class="link" href="about.html">About</a>
+        <a class="link" href="skills.html">Skills</a>
+        <a class="link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>Contact</h2>
+      <p class="lead">যোগাযোগের জন্য মেসেজ করুন — অথবা সরাসরি ইমেইল/ফোন ব্যবহার করুন।</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="card reveal" style="grid-column: span 7;">
+          <form class="form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button class="button primary" type="submit" onclick="return false;">Send Message</button>
+            <span class="note">Demo form — static site; আপনি ইমেইল বা ফোনে যোগাযোগ করলে দ্রুত উত্তর পাবেন।</span>
+          </form>
+        </div>
+        <div class="card reveal" style="grid-column: span 5;">
+          <h3>Direct</h3>
+          <p>📧 rifatrotno@gmail.com<br/>☎️ 01714628910</p>
+          <div style="margin-top:10px">
+            <span class="tag">Dhaka, Bangladesh</span>
+            <span class="tag">Available for work</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container inner">
+      <span>© Maruf Hossain</span>
+      <span>📧 rifatrotno@gmail.com • ☎️ 01714628910</span>
+    </div>
+  </footer>
+</body>
+</html>
